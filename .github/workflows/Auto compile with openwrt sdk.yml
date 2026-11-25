@@ -260,44 +260,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - platform: x86_64
-            url_sdk: https://downloads.openwrt.org/snapshots/targets/x86/64/
+          - platform: aarch64_cortex-a76
+            url_sdk: https://downloads.openwrt.org/releases/25.12.6/targets/bcm27xx/bcm2712/openwrt-sdk-25.12.6-bcm27xx-bcm2712_gcc-14.3.0_musl.Linux-x86_64.tar.zst
 
-          - platform: aarch64_generic
-            url_sdk: https://downloads.openwrt.org/snapshots/targets/rockchip/armv8/
-
-          - platform: aarch64_cortex-a53
-            url_sdk: https://downloads.openwrt.org/snapshots/targets/mediatek/filogic/
-
-          - platform: aarch64_cortex-a72
-            url_sdk: https://downloads.openwrt.org/snapshots/targets/mvebu/cortexa72/
-
-          - platform: arm_cortex-a7
-            url_sdk: https://downloads.openwrt.org/snapshots/targets/mediatek/mt7629/
-
-          - platform: arm_cortex-a7_neon-vfpv4
-            url_sdk: https://downloads.openwrt.org/snapshots/targets/ipq40xx/generic/
-
-          - platform: arm_cortex-a8_vfpv3
-            url_sdk: https://downloads.openwrt.org/snapshots/targets/sunxi/cortexa8/
-
-          - platform: arm_cortex-a9
-            url_sdk: https://downloads.openwrt.org/snapshots/targets/bcm53xx/generic/
-
-          - platform: arm_cortex-a15_neon-vfpv4
-            url_sdk: https://downloads.openwrt.org/snapshots/targets/ipq806x/generic/
-
-          - platform: mips_24kc
-            url_sdk: https://downloads.openwrt.org/snapshots/targets/ath79/generic/
-
-          - platform: mips_mips32
-            url_sdk: https://downloads.openwrt.org/snapshots/targets/bmips/bcm6318/
-
-          - platform: mipsel_24kc
-            url_sdk: https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/
-
-          - platform: mipsel_mips32
-            url_sdk: https://downloads.openwrt.org/snapshots/targets/bcm47xx/generic/
     steps:
       - name: Initialization environment
         run: |
