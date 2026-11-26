@@ -261,7 +261,7 @@ jobs:
       matrix:
         include:
           - platform: aarch64_cortex-a76
-            url_sdk: https://downloads.openwrt.org/releases/25.12.6/targets/bcm27xx/bcm2712/openwrt-sdk-25.12.6-bcm27xx-bcm2712_gcc-14.3.0_musl.Linux-x86_64.tar.zst
+            url_sdk: https://downloads.openwrt.org/releases/25.12.6/targets/bcm27xx/bcm2712/
 
     steps:
       - name: Initialization environment
