@@ -1,4 +1,4 @@
-# PassWall2
+# PassWall2 （专门针对树莓派5 安装官方的openwrt 25.12.6 路由器固件编译PassWall2插件）
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![OpenWrt](https://img.shields.io/badge/OpenWrt-21.02%2B-blue)](https://openwrt.org/)
